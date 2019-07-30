@@ -19,10 +19,20 @@
 </ul>
 
 
-<table>
+<table style="margin: 15px">
   <tbody>
   <mat-form-field>
     <input matInput type="number" placeholder="Start" formControlName="start"/>
+  </mat-form-field>
+  <h4>Basic native select</h4>
+  <mat-form-field>
+    <mat-label>Cars</mat-label>
+    <mat-select matNativeControl required>
+      <mat-option value="volvo">Volvo</mat-option>
+      <mat-option value="saab">Saab</mat-option>
+      <mat-option value="mercedes">Mercedes</mat-option>
+      <mat-option value="audi">Audi</mat-option>
+    </mat-select>
   </mat-form-field>
   </tbody>
 </table>
